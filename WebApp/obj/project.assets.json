@@ -5060,11 +5060,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Neo4JSample\\WebApp\\WebApp.csproj",
+      "projectUniqueName": "C:\\MojProjekcik\\WebApp\\WebApp.csproj",
       "projectName": "WebApp",
-      "projectPath": "C:\\Neo4JSample\\WebApp\\WebApp.csproj",
+      "projectPath": "C:\\MojProjekcik\\WebApp\\WebApp.csproj",
       "packagesPath": "C:\\Users\\PLMALIS4\\.nuget\\packages\\",
-      "outputPath": "C:\\Neo4JSample\\WebApp\\obj\\",
+      "outputPath": "C:\\MojProjekcik\\WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5083,8 +5083,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Neo4JSample\\Neo4JSample\\Neo4JSample.csproj": {
-              "projectPath": "C:\\Neo4JSample\\Neo4JSample\\Neo4JSample.csproj"
+            "C:\\MojProjekcik\\Neo4JSample\\Neo4JSample.csproj": {
+              "projectPath": "C:\\MojProjekcik\\Neo4JSample\\Neo4JSample.csproj"
             }
           }
         }
