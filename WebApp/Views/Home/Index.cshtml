@@ -1,0 +1,97 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+
+<div class="row">
+    <div class="col-8">
+        <div class="row">
+            <div class="col-8">
+                <a>Search for persons related with movies:</a>
+                <br />
+                <a>(You can leave all inputs empty or fill them however you need)</a>
+                <br />
+                <a>Movie type: (HorrorType,ActionType etc.)</a>
+                <br />
+                <a>Movie title: (table on the right)</a>
+                <br />
+                <a>Persons relation with movie: (DIRECTED, ACTED_IN)</a>
+                <br />
+            </div>
+            <div class="col-4">
+                <br />
+                <br />
+                <input style="height:20px" id="movieTypeInput" />
+                <br />
+                <input style="height:20px" id="movieTitleInput" />
+                <br />
+                <input style="height:20px" id="personsRelationInput" />
+                <br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="offset-5 col-5">
+                <button styl="height: 30px;margin-top: 20px !important;" onclick="Search()">Search</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <table style="border: 3px solid black; width: 100px;text-align: center;" id="moviesTable">
+            <thead style="border: 3px solid black">
+                <tr>
+                    <td>Title</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-5">
+        <table style="border: 3px solid black; width: 200px;text-align: center;" id="personsTable">
+            <thead style="border: 3px solid black">
+                <tr>
+                    <td>Persons name</td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+    var GetMovies = function () {
+        $.get("Home/GetMovies",
+            function (data) {
+                for (var i = 0; i < data.length; i++) {
+                    var temp = '<tr><td>' + data[i].title + '</td></tr>'
+                    $('#moviesTable > tbody:last-child').append(temp);
+                }
+            }, "json");
+    }
+
+    var GetPersons = function (movieType, movieTitle, personsRelation) {
+        $.get("Home/GetPersons?movieType=" + movieType + "&movieTitle=" + movieTitle + "&personsRelation=" + personsRelation,
+            function (data) {
+                $("#personsTable > tbody > tr").remove();
+                if (data.length === 0) alert("There are no matching persons!");
+                for (var i = 0; i < data.length; i++) {
+                    var temp = '<tr><td>' + data[i].name + '</td></tr>'
+                    $('#personsTable > tbody:last-child').append(temp);
+                }
+            }, "json");
+    }
+
+    var Search = function () {
+        GetPersons($('#movieTypeInput').get()[0].value, $('#movieTitleInput').get()[0].value, $('#personsRelationInput').get()[0].value)
+    }
+
+    GetMovies();
+</script>

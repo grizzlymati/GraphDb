@@ -1,0 +1,8 @@
+C:\Users\PLMALIS4\Documents\Neo4JSample\Neo4JSample\Neo4JSample\bin\Debug\netcoreapp2.0\Neo4JSample.deps.json
+C:\Users\PLMALIS4\Documents\Neo4JSample\Neo4JSample\Neo4JSample\bin\Debug\netcoreapp2.0\Neo4JSample.dll
+C:\Users\PLMALIS4\Documents\Neo4JSample\Neo4JSample\Neo4JSample\bin\Debug\netcoreapp2.0\Neo4JSample.pdb
+C:\Users\PLMALIS4\Documents\Neo4JSample\Neo4JSample\Neo4JSample\obj\Debug\netcoreapp2.0\Neo4JSample.csprojAssemblyReference.cache
+C:\Users\PLMALIS4\Documents\Neo4JSample\Neo4JSample\Neo4JSample\obj\Debug\netcoreapp2.0\Neo4JSample.AssemblyInfoInputs.cache
+C:\Users\PLMALIS4\Documents\Neo4JSample\Neo4JSample\Neo4JSample\obj\Debug\netcoreapp2.0\Neo4JSample.AssemblyInfo.cs
+C:\Users\PLMALIS4\Documents\Neo4JSample\Neo4JSample\Neo4JSample\obj\Debug\netcoreapp2.0\Neo4JSample.dll
+C:\Users\PLMALIS4\Documents\Neo4JSample\Neo4JSample\Neo4JSample\obj\Debug\netcoreapp2.0\Neo4JSample.pdb
